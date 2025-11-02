@@ -8,82 +8,86 @@
 
 /* Background */
 body {
-  background: linear-gradient(135deg, #3a3d40, #181818);
-  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-/* Calculator Container */
+/* Calculator container */
 .calculator {
-  background-color: #222;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-  width: 320px;
+  background-color: #1e1e1e;
   padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  width: 360px;
 }
 
 /* Display */
 .display input {
   width: 100%;
-  height: 60px;
+  height: 70px;
   background-color: #000;
-  color: #0f0;
-  font-size: 2rem;
+  color: #00ff90;
+  font-size: 2.2rem;
   text-align: right;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-/* Buttons */
+/* Buttons grid */
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 12px;
 }
 
+/* Button styling */
 .btn {
-  background-color: #333;
-  color: white;
-  font-size: 1.2rem;
-  padding: 20px;
+  background-color: #2e2e2e;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 22px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .btn:hover {
-  background-color: #555;
+  background-color: #3e3e3e;
 }
 
 .operator {
-  background-color: #f39c12;
+  background-color: #ff9500;
+  color: #fff;
 }
 
 .operator:hover {
-  background-color: #d68910;
+  background-color: #e08500;
 }
 
 .equal {
-  background-color: #2ecc71;
-  grid-column: span 1;
+  background-color: #34c759;
+  color: #fff;
 }
 
 .equal:hover {
-  background-color: #27ae60;
+  background-color: #28a745;
 }
 
-.zero {
-  grid-column: span 2;
+.function {
+  background-color: #555;
 }
 
-/* Responsive */
-@media (max-width: 400px) {
-  .calculator {
-    width: 90%;
-  }
+.function:hover {
+  background-color: #777;
 }
+
+.btn.function, .btn.operator, .btn.equal {
+  font-weight: bold;
+}
+
